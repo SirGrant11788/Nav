@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="38.9098"
+        mapbox:mapbox_cameraTargetLng="-77.0295"
+        mapbox:mapbox_cameraZoom="12"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!--<EditText-->
+        <!--android:id="@+id/SearchBar"-->
+        <!--android:layout_width="241dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Search" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button" />-->
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:drawableTop="@android:drawable/ic_menu_directions"
+        android:background = "@drawable/roundbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:enabled="false"
+        android:text="GO!"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="@+id/fab"
+        mapbox:layout_constraintHorizontal_bias="0.0"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <!--//FABs-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:tint="@android:color/white"
+        mapbox:backgroundTint="@color/colorPrimary"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:srcCompat="@android:drawable/ic_dialog_map"
+        android:layout_marginRight="8dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:tint="@android:color/white"
+        mapbox:backgroundTint="@color/colorPrimary"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:srcCompat="@android:drawable/ic_search_category_default"
+        android:layout_marginRight="8dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:tint="@android:color/white"
+        mapbox:backgroundTint="@color/colorPrimary"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:srcCompat="@android:drawable/ic_menu_preferences"
+        android:layout_marginRight="8dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:tint="@android:color/white"
+        mapbox:backgroundTint="@color/colorPrimary"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginRight="8dp" />
+
+    <ImageButton
+        android:id="@+id/buttonSetPlace"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="10dp"
+        android:layout_marginVertical="50dp"
+        mapbox:layout_constraintTop_toTopOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/touchenable"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="10dp" />
+
+
+</android.support.constraint.ConstraintLayout>

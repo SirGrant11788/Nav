@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/iconSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/navicon"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/txtNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Nav"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/cardview_light_background"
+        android:layout_below="@+id/iconSettings"/>
+    <TextView
+        android:id="@+id/txtSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="SETTINGS"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/cardview_light_background"
+
+        android:layout_below="@+id/txtNav"/>
+
+            <ToggleButton
+            android:id="@+id/toggleType"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+                android:background="@drawable/metricimperial"
+                android:scaleType="fitXY"
+            android:gravity="center"
+                android:layout_centerHorizontal="true"
+
+            android:textOff="IMPERIAL"
+            android:textOn="METRIC"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:shadowColor="@color/cardview_light_background"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layout_below="@+id/txtSettings"
+            />
+
+            <ToggleButton
+                android:id="@+id/toggleVehicle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/car"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textOff="DRIVING OFF"
+                android:textOn="DRIVING ON"
+
+                android:text="DRIVING"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:shadowColor="@color/cardview_light_background"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layout_below="@+id/toggleType"
+                />
+
+            <ToggleButton
+                android:id="@+id/toggleCycle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bicycle"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textOff="CYCLE OFF"
+                android:textOn="CYCLE ON"
+                android:checked="false"
+                android:text="CYCLE"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:shadowColor="@color/cardview_light_background"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layout_below="@+id/toggleVehicle"
+                />
+            <ToggleButton
+                android:id="@+id/toggleWalking"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/walking"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textOff="WALKING OFF"
+                android:textOn="WALKING ON"
+                android:checked="false"
+                android:text="WALKING"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:shadowColor="@color/cardview_light_background"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layout_below="@+id/toggleCycle"
+                />
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@null"
+
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="BACK"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="50"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:backgroundTint="@color/cardview_light_background"
+                android:layout_below="@+id/toggleWalking"/>
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@null"
+
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="LOGOUT"
+        android:shadowColor="#000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:backgroundTint="@color/cardview_light_background"
+        android:layout_below="@+id/btnBack"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/iconSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/navicon"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/txtNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Nav"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/iconSettings"/>
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="WELCOME"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/txtNav"/>
+
+    <!-- Login progress -->
+
+
+    <EditText
+        android:id="@+id/txteEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="40dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+        android:hint="email"
+        />
+
+    <EditText
+        android:id="@+id/txtePword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+        android:hint="password"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="40dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="LOGIN" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="REGISTER" />
+</LinearLayout>

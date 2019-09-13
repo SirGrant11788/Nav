@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nav</string>
+    <string name="access_token" translatable="false">pk.eyJ1Ijoic2lyZ3JhbnQxMTc4OCIsImEiOiJjanZocWgzbW4wNXZwNDFvNzVpZzZkYnV4In0.s3ew8avZMFmDbQ0Z2q4Z7Q</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="activity_destination">Destination</string>
+    <string name="action_settings">Settings</string>
+</resources>
